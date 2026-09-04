@@ -1,0 +1,477 @@
+{
+    "profile":  {
+                    "name":  "Lovely Tiwana",
+                    "brandName":  "Lovely Tiwana Films",
+                    "shortMark":  "LT.",
+                    "typography":  "swiss",
+                    "role":  "Director, DOP \u0026 Editor",
+                    "specialization":  "Music Videos \u0026 OTT Vertical Web Series",
+                    "tagline":  "Specializing in Music Videos \u0026 OTT Vertical Web Series. Shot exclusively on Sony Cinema Cameras.",
+                    "based":  "Punjab / Delhi, India",
+                    "status":  "Available for projects",
+                    "rolesList":  [
+                                      "Director",
+                                      "DOP",
+                                      "Editor"
+                                  ],
+                    "gear":  "Sony Cinema Line Cameras",
+                    "bio":  [
+                                "I am Lovely Tiwana, the creative mind behind Lovely Tiwana Films. With a carefully crafted portfolio of over 20 completed projects, I specialize in directing, shooting, and editing dynamic visual content focused on Music Videos and OTT Vertical Web Series.",
+                                "My approach adapts to the exact needs of the project. Whether I am stepping in exclusively as a precision Video Editor, leading the vision as a Director and Editor, or handling the complete visual journey as a Director, DOP, and Editor all at once, my focus remains on delivering premium cinematic quality. Armed with industry-leading Sony Cinema cameras, I ensure every frame tells a compelling story."
+                            ],
+                    "expertise":  [
+                                      {
+                                          "title":  "Complete Visual Production",
+                                          "roles":  "Director, DOP \u0026 Editor",
+                                          "desc":  "Handling Music Videos and OTT Vertical Series from the ground up. From setting the creative vision and lighting with Sony Cinema systems, to crafting the final cut in the editing room."
+                                      },
+                                      {
+                                          "title":  "Directing \u0026 Editing",
+                                          "roles":  "Director \u0026 Editor",
+                                          "desc":  "Leading artists and talent on set, and seamlessly bringing that vision together in post-production for a cohesive, fast-paced final product."
+                                      },
+                                      {
+                                          "title":  "Post-Production",
+                                          "roles":  "Video Editor \u0026 Colorist",
+                                          "desc":  "Stepping in as a dedicated editor to take pre-shot footage and elevate it through advanced editing, 9:16 vertical pacing, color grading, and precise finishing."
+                                      }
+                                  ],
+                    "portrait":  "assets/stills/director_portrait.jpg",
+                    "stats":  [
+                                  {
+                                      "label":  "Delivered Projects",
+                                      "value":  "20+"
+                                  },
+                                  {
+                                      "label":  "Primary Cinema Gear",
+                                      "value":  "Sony FX"
+                                  },
+                                  {
+                                      "label":  "Music \u0026 OTT Series",
+                                      "value":  "100%"
+                                  },
+                                  {
+                                      "label":  "Digital Views",
+                                      "value":  "80M+"
+                                  }
+                              ],
+                    "contact":  {
+                                    "email":  "lovelytiwana.film@gmail.com",
+                                    "phone":  "+91 98765 43210",
+                                    "whatsapp":  "+919876543210",
+                                    "instagram":  "https://instagram.com/lovelytiwana",
+                                    "youtube":  "https://youtube.com/@lovelytiwana",
+                                    "vimeo":  "https://vimeo.com/lovelytiwana",
+                                    "location":  "Punjab / Delhi, India"
+                                },
+                    "contactLead":  "Ready to bring your next Music Video or OTT Vertical Web Series to life? Let\u0027s collaborate. Get in touch with Lovely Tiwana Films today."
+                },
+    "showreel":  {
+                     "title":  "LOVELY TIWANA — DIRECTOR, DOP \u0026 EDITOR SHOWREEL",
+                     "videoUrl":  "https://www.youtube.com/watch?v=X0CA1xdzh4E",
+                     "poster":  "assets/posters/poster_kurta.jpg",
+                     "duration":  "03:20",
+                     "year":  "2026",
+                     "resolution":  "4K DCI",
+                     "camera":  "Sony Cinema Line (FX6 / FX3)",
+                     "description":  "Specializing in Music Videos \u0026 OTT Vertical Web Series. Shot exclusively on Sony Cinema Cameras across independent music releases and episodic vertical series."
+                 },
+    "sections":  [
+                     {
+                         "role":  "All",
+                         "small":  "the",
+                         "big":  "WORK",
+                         "blurb":  "Music Videos \u0026 OTT Vertical Web Series — directed, shot, and edited on Sony Cinema systems."
+                     },
+                     {
+                         "role":  "Director",
+                         "small":  "as",
+                         "big":  "DIRECTOR",
+                         "blurb":  "Selected work I\u0027ve directed — shaping artist performance, emotional beats, and storytelling across music videos and vertical series."
+                     },
+                     {
+                         "role":  "DOP",
+                         "small":  "as",
+                         "big":  "DOP",
+                         "blurb":  "Cinematography executed exclusively on Sony Cinema systems — lighting for widescreen music videos \u0026 cinematic 9:16 vertical series."
+                     },
+                     {
+                         "role":  "Editor",
+                         "small":  "as",
+                         "big":  "EDITOR",
+                         "blurb":  "Selected cuts — precision cutting, dynamic rhythm, color grading, and VFX finishing for songs and episodic web series."
+                     }
+                 ],
+    "genres":  [
+                   {
+                       "name":  "All",
+                       "label":  "All Work"
+                   },
+                   {
+                       "name":  "Music Videos",
+                       "label":  "Music Videos",
+                       "blurb":  "Commercial and artist-driven Punjabi music videos, performance tracks, and cinematic song stories."
+                   },
+                   {
+                       "name":  "OTT Vertical Web Series",
+                       "label":  "OTT Vertical Web Series",
+                       "blurb":  "Episodic 9:16 vertical drama, high-tension storytelling, and short-form fiction for OTT streaming platforms."
+                   }
+               ],
+    "projects":  [
+                     {
+                         "id":  "proj-life-power",
+                         "title":  "Life Power",
+                         "brand":  "White Hill Tunes",
+                         "roles":  [
+                                       "Director",
+                                       "DOP",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=vK7xNPohuBY",
+                         "poster":  "assets/posters/poster_life_power.jpg",
+                         "year":  "2026",
+                         "credits":  "Director, DOP \u0026 Editor: Lovely Tiwana\nShot on: iPhone 13 Pro Max",
+                         "note":  "Shot on iPhone 13 Pro Max",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-kurta",
+                         "title":  "Kurta — Bobby and Ritu Jass",
+                         "brand":  "Bobby and Ritu Jass",
+                         "roles":  [
+                                       "Director",
+                                       "DOP",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=X0CA1xdzh4E",
+                         "poster":  "assets/posters/poster_kurta.jpg",
+                         "year":  "2025",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nSingers: Bobby \u0026 Ritu Jass\nProduction: Lovely Tiwana Films",
+                         "note":  "Featured Track",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-chandigarh-da-husan",
+                         "title":  "Chandigarh Da Husan — Yadi Mangeala",
+                         "brand":  "Yadi Mangeala",
+                         "roles":  [
+                                       "Director",
+                                       "DOP",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=k6apUPa7IFo",
+                         "poster":  "assets/posters/poster_chandigarh_da_husan.jpg",
+                         "year":  "2025",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nSinger: Yadi Mangeala\nProduction: Lovely Tiwana Films",
+                         "note":  "Official Video",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-chete-karke",
+                         "title":  "Chete Karke — Gurjant Panag",
+                         "brand":  "Gurjant Panag",
+                         "roles":  [
+                                       "Director",
+                                       "DOP",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=_QVQnT4qG1U",
+                         "poster":  "assets/posters/poster_chete_karke.jpg",
+                         "year":  "2025",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nSinger: Gurjant Panag\nProduction: Lovely Tiwana Films",
+                         "note":  "Official Music Video",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-altu-jalatu",
+                         "title":  "Altu Jalatu — Nois",
+                         "brand":  "Nois",
+                         "roles":  [
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=FwfcWrvsmCY",
+                         "poster":  "assets/posters/poster_altu_jalatu.jpg",
+                         "year":  "2025",
+                         "credits":  "Video Editor \u0026 VFX: Lovely Tiwana\nSinger: Nois\nPost-Production: Lovely Tiwana Films",
+                         "note":  "VFX \u0026 Edit",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-ram-sita-ram",
+                         "title":  "Ram Sita Ram — Soumya Mukherjee",
+                         "brand":  "Soumya Mukherjee",
+                         "roles":  [
+                                       "Director",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=6Jq6PXCz2RU",
+                         "poster":  "assets/posters/poster_ram_sita_ram.jpg",
+                         "year":  "2025",
+                         "credits":  "Illustration \u0026 Animation: Lovely Tiwana\nSinger: Soumya Mukherjee\nVisual Production: Lovely Tiwana Films",
+                         "note":  "Animation \u0026 Art",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-fansi",
+                         "title":  "Fansi — Shaitaan \u0026 Dazzler",
+                         "brand":  "Shaitaan \u0026 Dazzler",
+                         "roles":  [
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=CzVt8QkZFqM",
+                         "poster":  "assets/posters/poster_fansi.jpg",
+                         "year":  "2025",
+                         "credits":  "Editor: Lovely Tiwana\nSingers: Shaitaan \u0026 Dazzler\nPost-Production: Lovely Tiwana Films",
+                         "note":  "Precision Edit",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-toxic-pyaar",
+                         "title":  "Toxic Pyaar — OTT Vertical Series",
+                         "brand":  "We Make Cinema",
+                         "roles":  [
+                                       "Director",
+                                       "Editor"
+                                   ],
+                         "genre":  "OTT Vertical Web Series",
+                         "videoUrl":  "",
+                         "poster":  "assets/posters/poster_toxic_pyaar.jpg",
+                         "year":  "2026",
+                         "credits":  "Director: Lovely Tiwana\nProduction: We Make Cinema\nCast: Ayaan Shroff, Shyama Raj, Deep Chand, Pradeep Nair\nWriter: Jayant Gupta | DOP: Akash Kaliyan\nFormat: 9:16 Vertical Micro-Drama Series",
+                         "note":  "Coming Soon",
+                         "aspectRatio":  "9:16",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-death-clock",
+                         "title":  "Death Clock — 6-Episode Thriller Series",
+                         "brand":  "Original Thriller Series",
+                         "roles":  [
+                                       "Director",
+                                       "DOP",
+                                       "Editor"
+                                   ],
+                         "genre":  "OTT Vertical Web Series",
+                         "videoUrl":  "",
+                         "poster":  "assets/posters/poster_death_clock.jpg",
+                         "year":  "2026",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nFormat: 9:16 Six-Episode Thriller Series\nStory: Do Log. Ek Godown. Ek Timer. Zindagi aur Maut ke beech ki race.\nTagline: Time is running out. Survival isn\u0027t a choice.",
+                         "note":  "Coming Soon",
+                         "aspectRatio":  "9:16",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-date-with-daddy",
+                         "title":  "Date With Daddy-In-Law — Micro-Drama",
+                         "brand":  "Original Micro-Drama",
+                         "roles":  [
+                                       "Director",
+                                       "Editor"
+                                   ],
+                         "genre":  "OTT Vertical Web Series",
+                         "videoUrl":  "",
+                         "poster":  "assets/posters/poster_date_with_daddy.jpg",
+                         "year":  "2026",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nGenre: Dark Comedy | Romance | Thriller\nFormat: 9:16 Original Micro-Drama Series\nTagline: He came for a date... got a life test!",
+                         "note":  "Coming Soon",
+                         "aspectRatio":  "9:16",
+                         "featured":  true
+                     },
+                     {
+                         "id":  "proj-main-ni-mannda",
+                         "title":  "Main Ni Mannda — Udejit",
+                         "brand":  "Udejit",
+                         "roles":  [
+                                       "Director",
+                                       "Editor"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=riktZFuCggI",
+                         "poster":  "assets/posters/poster_main_ni_mannda.jpg",
+                         "year":  "2025",
+                         "credits":  "Created, Directed \u0026 Edited by Lovely Tiwana\nSinger: Udejit\nNote: Completely created using AI (Artificial Intelligence)",
+                         "note":  "Completely Created with AI",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     }
+                 ],
+    "stills":  [
+                   {
+                       "id":  "still-director",
+                       "image":  "assets/stills/director_portrait.jpg",
+                       "title":  "Lovely Tiwana — Director \u0026 DOP",
+                       "camera":  "Sony Cinema Line · Director on Set",
+                       "category":  "Director Portrait",
+                       "year":  "2026"
+                   },
+                   {
+                       "id":  "still-pata-chala",
+                       "image":  "assets/stills/still_pata_chala.jpg",
+                       "title":  "Pata Chala — Official Lyrical Video Poster",
+                       "camera":  "PS Productions · RGB Film Studio",
+                       "category":  "Official Release Poster",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-a-qubool-1",
+                       "image":  "assets/stills/still_a_qubool_square.jpg",
+                       "title":  "A Qubool — Official Square Release Poster",
+                       "camera":  "PS Productions · Starring Ayaan, Ritika Arora, Danish Khan",
+                       "category":  "Music Video Poster",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-a-qubool-2",
+                       "image":  "assets/stills/still_a_qubool_romance.jpg",
+                       "title":  "A Qubool — Intimate Romance Frame",
+                       "camera":  "Sony Cinema Line · Lighting \u0026 Color DI",
+                       "category":  "Production Still",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-a-qubool-3",
+                       "image":  "assets/stills/still_a_qubool_sunset.jpg",
+                       "title":  "A Qubool — Sunset Landscape Frame",
+                       "camera":  "Sony Cinema Line · Outdoor Day Setup",
+                       "category":  "Cinematography Still",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-move-on",
+                       "image":  "assets/stills/still_move_on.jpg",
+                       "title":  "Move On — Sukh Gill ft. Smayra",
+                       "camera":  "Edit / DI / Poster: RGB Film Studio · Jass Records",
+                       "category":  "Music Video Release",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-toxic-pyaar",
+                       "image":  "assets/stills/still_toxic_pyaar.jpg",
+                       "title":  "Toxic Pyaar — Official OTT Series Poster",
+                       "camera":  "Director: Lovely Tiwana · We Make Cinema",
+                       "category":  "OTT Vertical Series",
+                       "year":  "2026"
+                   },
+                   {
+                       "id":  "still-death-clock",
+                       "image":  "assets/stills/still_death_clock.jpg",
+                       "title":  "Death Clock — 6-Episode Thriller Poster",
+                       "camera":  "Director \u0026 Editor: Lovely Tiwana",
+                       "category":  "OTT Vertical Series",
+                       "year":  "2026"
+                   },
+                   {
+                       "id":  "still-date-with-daddy",
+                       "image":  "assets/stills/still_date_with_daddy.jpg",
+                       "title":  "Date With Daddy-In-Law — Micro-Drama Poster",
+                       "camera":  "Director \u0026 Editor: Lovely Tiwana",
+                       "category":  "OTT Vertical Series",
+                       "year":  "2026"
+                   },
+                   {
+                       "id":  "still-narazzgi",
+                       "image":  "assets/stills/still_narazzgi.jpg",
+                       "title":  "Narazzgi — Official Lyrical Video Poster",
+                       "camera":  "PS Productions · Starring Ayaan \u0026 S Babli",
+                       "category":  "Music Video Poster",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-marzi-de-malak",
+                       "image":  "assets/stills/still_marzi_de_malak.jpg",
+                       "title":  "Marzi De Malak — Sukh Gill ft. Vicky Dhaliwal",
+                       "camera":  "Poster Design / Post: RGB Film Studio",
+                       "category":  "Action Music Film",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-fansi-poster",
+                       "image":  "assets/stills/still_fansi_poster.jpg",
+                       "title":  "Fansi — Official High-Res Release Poster",
+                       "camera":  "Editor: Lovely Tiwana · PS Productions Official",
+                       "category":  "Theatrical Poster",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-yeh-baarishein",
+                       "image":  "assets/stills/still_yeh_baarishein.jpg",
+                       "title":  "Yeh Baarishein — Official Romance Poster",
+                       "camera":  "PS Productions Official · Singer: Sahas Pathak",
+                       "category":  "Romantic Music Video",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-apsra",
+                       "image":  "assets/stills/still_apsra.jpg",
+                       "title":  "Apsra ft. Ankita Bhawsar — Official Poster",
+                       "camera":  "PS Productions Official · Rapper: Lekhak",
+                       "category":  "Music Video Poster",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-eyes-on-me",
+                       "image":  "assets/stills/still_eyes_on_me.jpg",
+                       "title":  "Eyes On Me — Sidhu Moosewala",
+                       "camera":  "Official Artwork / Project Design",
+                       "category":  "Iconic Cover Art",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-apsra-standing",
+                       "image":  "assets/stills/still_apsra_standing.jpg",
+                       "title":  "Apsra — Ankita Bhawsar (Production Frame)",
+                       "camera":  "PS Productions Official · Cine Lighting",
+                       "category":  "Production Still",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-apsra-couch",
+                       "image":  "assets/stills/still_apsra_couch.jpg",
+                       "title":  "Apsra — Candlelight Aesthetic Frame",
+                       "camera":  "PS Productions Official · Lyrical Video",
+                       "category":  "Production Frame",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-cinematography-field",
+                       "image":  "assets/stills/still_cinematography_field.jpg",
+                       "title":  "Village Field \u0026 Motorcycle Sequence — 3-Strip Cinematography",
+                       "camera":  "Sony Cinema Line · S-Log3 Grade",
+                       "category":  "Cinematography Stills",
+                       "year":  "2025"
+                   },
+                   {
+                       "id":  "still-cinematography-bridge",
+                       "image":  "assets/stills/still_cinematography_bridge.jpg",
+                       "title":  "Railway Overbridge Sunset Sequence — 3-Strip Cinematography",
+                       "camera":  "Sony Cinema Line · Golden Hour Setup",
+                       "category":  "Cinematography Stills",
+                       "year":  "2025"
+                   }
+               ],
+    "brands":  [
+                   "WHITE HILL MUSIC",
+                   "SPEED RECORDS",
+                   "PS PRODUCTIONS",
+                   "PANAG RECORDS",
+                   "PB13 RECORDS",
+                   "SHARP RECORDS",
+                   "REEJH FILMS",
+                   "WE MAKE CINEMA"
+               ]
+}

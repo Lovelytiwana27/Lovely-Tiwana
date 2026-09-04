@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovely Tiwana | Director, DOP &amp; Editor — Lovely Tiwana Films</title>
+  <meta name="description" content="Lovely Tiwana | Director, DOP &amp; Editor. Crafting high-end cinematic visuals. Shot exclusively on Sony Cinema Cameras.">
+  <meta name="keywords" content="Lovely Tiwana, Lovely Tiwana Films, Director, DOP, Editor, Sony Cinema Line, Punjabi Music Videos, Commercials, Film Portfolio">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lovely Tiwana | Director, DOP &amp; Editor — Lovely Tiwana Films">
+  <meta property="og:description" content="Crafting high-end cinematic visuals. Shot exclusively on Sony Cinema Cameras.">
+  <meta property="og:image" content="assets/posters/showreel_cover.jpg">
+
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 fill=%22%23e5a93c%22>LT</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Camera Viewfinder Cursor -->
+  <div class="camera-cursor" id="cameraCursor">
+    <div class="cursor-reticle">
+      <svg class="cursor-cam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke-width="1.6"/>
+        <circle cx="12" cy="13" r="3.5" stroke-width="1.6"/>
+        <circle class="cursor-rec-dot" cx="19" cy="9" r="1.3" fill="#ef4444"/>
+      </svg>
+      <span class="cursor-rec-text">REC</span>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" id="navBrand" aria-label="Lovely Tiwana">
+        <span class="brand-monogram">LT</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#work" class="nav-link active">Work</a></li>
+          <li><a href="#stills" class="nav-link">Stills</a></li>
+          <li><a href="#bio" class="nav-link">Bio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-studio" id="btnOpenStudio" title="Open Portfolio CMS (Press 'E')">
+          <span class="studio-indicator"></span>
+          <span>Studio CMS</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Facts & Live Status Bar -->
+  <div class="facts-bar" id="factsBar">
+    <div class="container facts-inner" id="factsInner">
+      <!-- Injected dynamically via JS -->
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <!-- Ambient Background Poster Slideshow Reel -->
+        <div class="hero-poster-reel" id="heroPosterReel">
+          <div class="reel-slide active" style="background-image: url('assets/posters/showreel_cover.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_narazzgi.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_eyes_on_me.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_marzi_de_malak.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_fansi_poster.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/posters/poster_toxic_pyaar.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_yeh_baarishein.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/posters/poster_death_clock.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/stills/still_apsra.jpg');"></div>
+          <div class="reel-slide" style="background-image: url('assets/posters/poster_date_with_daddy.jpg');"></div>
+        </div>
+        <div class="hero-poster-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-super">Music Videos · OTT Vertical Web Series · Sony Cinema Line</div>
+        <h1 class="hero-title" id="heroName">lovely tiwana</h1>
+        <p class="hero-subline" id="heroSubline">— Director · DOP · Editor — Punjab/Delhi, India</p>
+
+        <div class="hero-lead-row">
+          <p class="hero-role-desc" id="heroRoleDesc">
+            Specializing in Music Videos &amp; OTT Vertical Web Series. Shot exclusively on Sony Cinema Cameras.
+          </p>
+        </div>
+
+        <!-- Featured Showreel Banner Card -->
+        <div class="hero-reel-banner" id="heroReelBanner" role="button" aria-label="Watch Main Showreel">
+          <img class="reel-poster-img" id="reelPosterImg" src="assets/posters/showreel_cover.jpg" alt="Lovely Tiwana Showreel Poster">
+          
+          <div class="reel-overlay">
+            <div class="reel-badge-top">
+              <span class="reel-tag">Selected Works · 2026</span>
+              <span class="reel-duration-pill" id="reelDuration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span>02:18</span>
+              </span>
+            </div>
+
+            <div class="reel-center-cta">
+              <div class="play-circle-btn">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="reel-btn-label">Watch Showreel</span>
+            </div>
+
+            <div class="reel-info-bottom">
+              <div class="reel-title-meta">
+                <h3 id="reelTitle">LOVELY TIWANA — DIRECTION & CINEMATOGRAPHY SHOWREEL</h3>
+                <p id="reelMeta">2026 · 4K Ultra HD · ARRI Alexa Mini LF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK & PROJECTS SECTION -->
+    <section class="work-section" id="work">
+      <div class="container">
+        
+        <!-- Dynamic Header (Switches per Role) -->
+        <div class="section-head">
+          <div class="section-tagline">
+            <span class="tagline-small" id="sectionSmallTag">the</span>
+            <h2 class="tagline-big" id="sectionBigTag">WORK</h2>
+          </div>
+          <p class="section-blurb" id="sectionBlurb">
+            Direction, cinematography and edit — across music videos, commercial brand films, and narrative storytelling.
+          </p>
+        </div>
+
+        <!-- Filters (Role Tabs & Genre Pills) -->
+        <div class="filter-wrapper">
+          <div class="role-tabs" id="roleTabs">
+            <!-- Injected via JS -->
+          </div>
+
+          <div class="genre-filter-row">
+            <div class="genre-pills" id="genrePills">
+              <!-- Injected via JS -->
+            </div>
+
+            <div class="project-search-box">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              <input type="text" id="projectSearchInput" placeholder="Search by title, brand, credit..." aria-label="Search projects">
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Injected via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STILLS & POSTERS GALLERY SECTION (Single-Line Horizontal Carousel with Side Motion) -->
+    <section class="stills-section" id="stills">
+      <div class="container">
+        <div class="section-head stills-head-row">
+          <div>
+            <div class="section-tagline">
+              <span class="tagline-small">production</span>
+              <h2 class="tagline-big">STILLS &amp; POSTERS</h2>
+            </div>
+            <p class="section-blurb">
+              Selected production frames, release posters, and cinematography setups.
+            </p>
+          </div>
+
+          <!-- Side Click Controls for One-by-One Motion -->
+          <div class="stills-controls">
+            <button type="button" class="stills-nav-btn prev" id="stillsPrevBtn" aria-label="Previous frame">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <span class="stills-counter" id="stillsCounter">01 / 19</span>
+            <button type="button" class="stills-nav-btn next" id="stillsNextBtn" aria-label="Next frame">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="stills-slider-container" id="stillsSliderContainer">
+          <div class="stills-track" id="stillsGrid">
+            <!-- Injected via JS in a single horizontal row -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIO & EXPERIENCE SECTION -->
+    <section class="bio-section" id="bio">
+      <div class="container">
+        <div class="bio-grid">
+          <div class="bio-portrait-wrap">
+            <img class="bio-portrait-img" id="bioPortraitImg" src="assets/stills/director_portrait.jpg" alt="Lovely Tiwana Portrait">
+          </div>
+
+          <div class="bio-content">
+            <span class="bio-subhead">Lovely Tiwana Films</span>
+            <h2 class="bio-name">LOVELY TIWANA</h2>
+            
+            <div class="bio-paragraphs" id="bioParagraphs">
+              <!-- Injected via JS -->
+            </div>
+
+            <div class="bio-stats-grid" id="bioStatsGrid">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERTISE & ROLES SECTION (Requested by User) -->
+        <div class="expertise-wrapper" id="expertiseWrapper">
+          <div class="expertise-heading">My Expertise &amp; Roles</div>
+          <div class="expertise-grid" id="expertiseGrid">
+            <div class="expertise-card">
+              <div class="expertise-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </div>
+              <h3 class="expertise-card-title">Complete Visual Production</h3>
+              <span class="expertise-card-roles">Director, DOP &amp; Editor</span>
+              <p class="expertise-card-desc">
+                Handling the entire project from the ground up. From setting the creative vision and lighting the scene with Sony Cinema systems, to crafting the final cut in the editing room.
+              </p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l5 5-5 5"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+              </div>
+              <h3 class="expertise-card-title">Directing &amp; Editing</h3>
+              <span class="expertise-card-roles">Director &amp; Editor</span>
+              <p class="expertise-card-desc">
+                Leading the talent on set, and seamlessly bringing that vision together in post-production for a cohesive final product.
+              </p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+              </div>
+              <h3 class="expertise-card-title">Post-Production</h3>
+              <span class="expertise-card-roles">Video Editor</span>
+              <p class="expertise-card-desc">
+                Stepping in as a dedicated editor to take pre-shot footage and elevate it through advanced editing, color grading, and precise finishing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BRAND MARQUEE SECTION -->
+    <section class="brand-marquee-section">
+      <div class="marquee-label">Collaborated With Top Labels & Brands</div>
+      <div class="marquee-track" id="brandMarqueeTrack">
+        <!-- Injected via JS -->
+      </div>
+    </section>
+
+    <!-- CONTACT / LET'S CREATE SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 2rem;">
+          <div class="section-tagline">
+            <span class="tagline-small">let's</span>
+            <h2 class="tagline-big">CREATE</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-direct-info">
+            <p style="color:var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Ready to bring your next Music Video or OTT Vertical Web Series to life? Let's collaborate. Get in touch with Lovely Tiwana Films today.
+            </p>
+
+            <div class="contact-channels">
+              <a href="#" class="channel-item" id="linkContactEmail">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="channel-meta">
+                  <span>Direct Email</span>
+                  <strong id="contactEmail">lovelytiwana.film@gmail.com</strong>
+                </div>
+              </a>
+
+              <a href="#" class="channel-item" id="linkContactPhone">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="channel-meta">
+                  <span>Phone / WhatsApp</span>
+                  <strong id="contactPhone">+91 98765 43210</strong>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="channel-meta">
+                  <span>Base Location</span>
+                  <strong id="contactLocation">Punjab / Delhi, India</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div style="display:flex; gap: 1rem; margin-top: 1rem;">
+              <a href="#" target="_blank" rel="noopener" id="contactInstagram" class="btn-cms-secondary">Instagram ↗</a>
+              <a href="#" target="_blank" rel="noopener" id="contactYoutube" class="btn-cms-secondary">YouTube ↗</a>
+              <a href="#" target="_blank" rel="noopener" id="contactVimeo" class="btn-cms-secondary">Vimeo ↗</a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <form class="contact-form" id="contactForm">
+            <h3 style="font-family:var(--font-display); font-size: 1.4rem;">Send Project Inquiry</h3>
+
+            <div class="form-group">
+              <label for="inputName">Your Name / Company</label>
+              <input type="text" id="inputName" required placeholder="e.g. Aman Sharma / Label Name">
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input type="email" id="inputEmail" required placeholder="name@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="inputType">Project Type</label>
+              <select id="inputType">
+                <option value="Music Video (Full Production)">Music Video (Full Production)</option>
+                <option value="OTT Vertical Web Series">OTT Vertical Web Series (9:16)</option>
+                <option value="Direction &amp; DOP">Direction &amp; DOP</option>
+                <option value="Video Editing, VFX &amp; Color">Video Editing, VFX &amp; Color</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage">Project Brief & Details</label>
+              <textarea id="inputMessage" rows="4" required placeholder="Brief concept, shoot timeline, references, and location..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="footerYear">2026</span> Lovely Tiwana Films. All rights reserved.
+      </div>
+      <div>
+        <a href="#hero" class="back-to-top-btn">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FULLSCREEN CINEMA LIGHTBOX (VIDEO PLAYER)
+       ========================================================================== -->
+  <div class="cinema-modal" id="cinemaModal" role="dialog" aria-modal="true">
+    <div class="cinema-container">
+      <div class="cinema-header">
+        <div class="cinema-title-wrap">
+          <h4 id="cinemaTitle">Project Title</h4>
+          <p id="cinemaMeta">Genre · Year</p>
+        </div>
+        <button class="cinema-close-btn" id="cinemaCloseBtn" title="Close Video (Esc)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="cinema-player-box" id="cinemaPlayerBox">
+        <!-- Video Iframe / Player is injected here -->
+      </div>
+
+      <div class="cinema-details-drawer">
+        <div class="cinema-credits-box">
+          <h5>Credits & Production Notes</h5>
+          <div class="cinema-credits-text" id="cinemaCreditsText"></div>
+        </div>
+
+        <div class="cinema-actions">
+          <a href="#" target="_blank" rel="noopener" class="btn-external-link" id="cinemaExternalBtn">
+            <span>Watch on Platform</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       IMAGE LIGHTBOX (STILLS)
+       ========================================================================== -->
+  <div class="image-lightbox" id="imageLightbox">
+    <div class="lightbox-content">
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Still preview">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <button class="cinema-close-btn" id="lightboxCloseBtn" title="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STUDIO CMS DRAWER (USER REQUEST: ADD VIDEOS, POSTERS, SHOWREEL)
+       ========================================================================== -->
+  <div class="studio-backdrop" id="studioBackdrop"></div>
+  <aside class="studio-drawer" id="studioDrawer" aria-label="Studio CMS Drawer">
+    <div class="studio-header">
+      <div class="studio-title-block">
+        <h3>Studio Manager</h3>
+        <span class="studio-tag">CMS Mode</span>
+      </div>
+      <button class="cinema-close-btn" id="btnCloseStudio" title="Close Drawer (Esc)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="studio-nav-tabs">
+      <button class="studio-tab-btn active" data-tab="tab-add-project">Add Project</button>
+      <button class="studio-tab-btn" data-tab="tab-manage-projects">Manage</button>
+      <button class="studio-tab-btn" data-tab="tab-showreel">Showreel</button>
+      <button class="studio-tab-btn" data-tab="tab-stills">Stills</button>
+      <button class="studio-tab-btn" data-tab="tab-typography">Font Style</button>
+      <button class="studio-tab-btn" data-tab="tab-profile">Bio & Contact</button>
+      <button class="studio-tab-btn" data-tab="tab-backup">Backup</button>
+    </nav>
+
+    <div class="studio-body">
+
+      <!-- TAB 1: ADD VIDEO PROJECT -->
+      <div class="studio-tab-panel active" id="tab-add-project">
+        <form id="formAddProject" class="studio-box">
+          <div class="studio-box-title">
+            <span>Add / Edit Video Project</span>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Project Title *</label>
+            <input type="text" name="title" required placeholder="e.g. NIGHT DRIVE — Music Video">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Brand / Artist / Client</label>
+            <input type="text" name="brand" placeholder="e.g. Urban Sound Records / Apple">
+          </div>
+
+          <div class="cms-form-row">
+            <div class="cms-input-group">
+              <label>Genre / Category</label>
+              <select name="genre">
+                <option value="Music Videos">Music Videos</option>
+                <option value="OTT Vertical Web Series">OTT Vertical Web Series</option>
+              </select>
+            </div>
+            <div class="cms-input-group">
+              <label>Aspect Ratio</label>
+              <select name="aspectRatio">
+                <option value="16:9">16:9 (Widescreen / Music Video)</option>
+                <option value="9:16">9:16 (Vertical OTT Series)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Roles (Check all that apply)</label>
+            <div style="display:flex; gap:1.2rem; flex-wrap:wrap; font-size:0.85rem;">
+              <label style="display:inline-flex; align-items:center; gap:0.3rem;">
+                <input type="checkbox" name="roles" value="Director" checked> Director
+              </label>
+              <label style="display:inline-flex; align-items:center; gap:0.3rem;">
+                <input type="checkbox" name="roles" value="DOP" checked> DOP
+              </label>
+              <label style="display:inline-flex; align-items:center; gap:0.3rem;">
+                <input type="checkbox" name="roles" value="Editor"> Editor
+              </label>
+            </div>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Video Link (YouTube / Vimeo / MP4) *</label>
+            <input type="url" name="videoUrl" required placeholder="https://www.youtube.com/watch?v=... or https://vimeo.com/...">
+            <span class="cms-input-hint">Paste standard YouTube watch links, shorts, Vimeo links, or direct MP4 files.</span>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Poster Thumbnail Image</label>
+            <input type="text" name="posterUrl" id="cmsPosterUrlInput" placeholder="Image URL (e.g. assets/posters/... or https://...)">
+            <div style="margin-top:0.4rem;">
+              <input type="file" id="cmsPosterFileInput" accept="image/*" style="font-size:0.75rem;">
+            </div>
+            <div class="cms-poster-preview" id="cmsPosterPreview">
+              <span class="placeholder-txt">Poster Preview</span>
+            </div>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Release Year</label>
+            <input type="text" name="year" placeholder="2026">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Badge / Highlight Note</label>
+            <input type="text" name="note" placeholder="e.g. Trending #1, Award Winner, 4K">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Credits Block</label>
+            <textarea name="credits" rows="3" placeholder="Director: Lovely Tiwana&#10;DOP: Lovely Tiwana&#10;Production: Lovely Tiwana Films"></textarea>
+          </div>
+
+          <button type="submit" class="btn-cms-primary">Add New Project</button>
+        </form>
+      </div>
+
+      <!-- TAB 2: MANAGE PROJECTS -->
+      <div class="studio-tab-panel" id="tab-manage-projects">
+        <div class="studio-box">
+          <div class="studio-box-title">
+            <span>Existing Projects</span>
+          </div>
+          <p class="cms-input-hint">Edit details or remove projects. Changes immediately save and reflect on your site.</p>
+          <div id="cmsProjectsList" style="display:flex; flex-direction:column; gap:0.6rem;">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: UPDATE SHOWREEL -->
+      <div class="studio-tab-panel" id="tab-showreel">
+        <form id="formShowreel" class="studio-box">
+          <div class="studio-box-title">
+            <span>Update Showreel Video & Banner</span>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Showreel Title</label>
+            <input type="text" name="reelTitle" required>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Showreel Video Link (YouTube / Vimeo / MP4)</label>
+            <input type="url" name="reelVideoUrl" required>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Reel Duration</label>
+            <input type="text" name="reelDuration" placeholder="02:18">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Resolution Tag</label>
+            <input type="text" name="reelResolution" placeholder="4K DCI">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Camera Specs Tag</label>
+            <input type="text" name="reelCamera" placeholder="ARRI Alexa Mini LF / Cooke Anamorphic">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Showreel Cover Poster</label>
+            <input type="text" name="reelPoster" id="cmsReelPosterInput">
+            <div style="margin-top:0.4rem;">
+              <input type="file" id="cmsReelPosterFileInput" accept="image/*" style="font-size:0.75rem;">
+            </div>
+            <div class="cms-poster-preview" id="cmsReelPosterPreview"></div>
+          </div>
+
+          <button type="submit" class="btn-cms-primary">Save Showreel Settings</button>
+        </form>
+      </div>
+
+      <!-- TAB 4: STILLS & POSTERS -->
+      <div class="studio-tab-panel" id="tab-stills">
+        <form id="formAddStill" class="studio-box">
+          <div class="studio-box-title">
+            <span>Add Production Still / Poster</span>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Image Caption / Scene Title</label>
+            <input type="text" name="stillTitle" placeholder="e.g. Anamorphic Night Setup">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Camera / Lens Information</label>
+            <input type="text" name="stillCamera" placeholder="e.g. ARRI Alexa 35 · Cooke S4/i">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Photo Image</label>
+            <input type="text" name="stillUrl" id="cmsStillUrlInput" placeholder="Image URL">
+            <div style="margin-top:0.4rem;">
+              <input type="file" id="cmsStillFileInput" accept="image/*" style="font-size:0.75rem;">
+            </div>
+            <div class="cms-poster-preview" id="cmsStillPreview">
+              <span class="placeholder-txt">Still Preview</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-cms-primary">Add to Stills Gallery</button>
+        </form>
+
+        <div class="studio-box" style="margin-top:1rem;">
+          <div class="studio-box-title">
+            <span>Current Gallery</span>
+          </div>
+          <div id="cmsStillsList" style="display:flex; flex-direction:column; gap:0.6rem;"></div>
+        </div>
+      </div>
+
+      <!-- TAB: TYPOGRAPHY / FONT PRESETS -->
+      <div class="studio-tab-panel" id="tab-typography">
+        <div class="studio-box">
+          <div class="studio-box-title">
+            <span>Choose Typography Style</span>
+          </div>
+          <p class="cms-input-hint">Click any font style below. Your website will immediately re-render in that typographic aesthetic and save your preference.</p>
+
+          <div class="font-preset-cards" id="fontPresetCards">
+            <!-- 1. Swiss Neo-Grotesk (Default / Chaitanya Chugh style) -->
+            <button type="button" class="font-preset-card active" data-font-preset="swiss">
+              <div class="font-card-header">
+                <span class="font-card-title">1. Swiss Neo-Grotesk (Inter)</span>
+                <span class="font-card-badge">Chaitanya Chugh Style</span>
+              </div>
+              <div class="font-card-sample" style="font-family:'Inter', sans-serif; letter-spacing:-0.04em;">
+                LOVELY TIWANA — DIRECTOR
+              </div>
+              <p class="font-card-desc">Razor-sharp, minimalist, high-end international director aesthetic. Zero playful curves, 100% clean and professional.</p>
+            </button>
+
+            <!-- 2. Cinematic Movie Poster (Bebas Neue) -->
+            <button type="button" class="font-preset-card" data-font-preset="cinema">
+              <div class="font-card-header">
+                <span class="font-card-title">2. Cinematic Widescreen (Bebas Neue)</span>
+                <span class="font-card-badge">Hollywood / Movie Poster</span>
+              </div>
+              <div class="font-card-sample" style="font-family:'Bebas Neue', sans-serif; letter-spacing:0.04em; font-size:1.6rem;">
+                LOVELY TIWANA — DIRECTOR
+              </div>
+              <p class="font-card-desc">Bold, tall, dramatic title treatment inspired by theatrical release movie posters and 35mm film opening titles.</p>
+            </button>
+
+            <!-- 3. Prestige Editorial (Cinzel) -->
+            <button type="button" class="font-preset-card" data-font-preset="editorial">
+              <div class="font-card-header">
+                <span class="font-card-title">3. Prestige Editorial (Cinzel)</span>
+                <span class="font-card-badge">Cannes / Luxury Commercials</span>
+              </div>
+              <div class="font-card-sample" style="font-family:'Cinzel', serif; letter-spacing:0.06em;">
+                LOVELY TIWANA — DIRECTOR
+              </div>
+              <p class="font-card-desc">High-fashion, luxury architecture, and prestigious film festival laureate typography with classic Roman proportions.</p>
+            </button>
+
+            <!-- 4. Modernist Studio (Space Grotesk) -->
+            <button type="button" class="font-preset-card" data-font-preset="studio">
+              <div class="font-card-header">
+                <span class="font-card-title">4. Architectural Studio (Space Grotesk)</span>
+                <span class="font-card-badge">Modern DP Set</span>
+              </div>
+              <div class="font-card-sample" style="font-family:'Space Grotesk', sans-serif; letter-spacing:-0.03em;">
+                LOVELY TIWANA — DIRECTOR
+              </div>
+              <p class="font-card-desc">Contemporary geometric craft, technical camera department aesthetic, balanced for cutting-edge digital work.</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: PROFILE & BIO -->
+      <div class="studio-tab-panel" id="tab-profile">
+        <form id="formBioSettings" class="studio-box">
+          <div class="studio-box-title">
+            <span>Profile & Bio Settings</span>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Director / Name</label>
+            <input type="text" name="profName" required>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Based Location</label>
+            <input type="text" name="profBased">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Project Status</label>
+            <input type="text" name="profStatus" placeholder="Available for projects">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Bio Narrative (Separate paragraphs with double enter)</label>
+            <textarea name="profBio" rows="6"></textarea>
+          </div>
+
+          <div class="cms-input-group">
+            <label>Contact Email</label>
+            <input type="email" name="contactEmail">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Contact Phone</label>
+            <input type="text" name="contactPhone">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Instagram Link</label>
+            <input type="url" name="contactInstagram">
+          </div>
+
+          <div class="cms-input-group">
+            <label>YouTube Link</label>
+            <input type="url" name="contactYoutube">
+          </div>
+
+          <div class="cms-input-group">
+            <label>Vimeo Link</label>
+            <input type="url" name="contactVimeo">
+          </div>
+
+          <button type="submit" class="btn-cms-primary">Save Profile Info</button>
+        </form>
+      </div>
+
+      <!-- TAB 6: BACKUP & DATA EXPORT -->
+      <div class="studio-tab-panel" id="tab-backup">
+        <div class="studio-box">
+          <div class="studio-box-title">
+            <span>Export & Permanent Backup</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5;">
+            Your changes are auto-saved in your browser cache. To make them permanent or deploy to your hosting/GitHub, download the updated <code>projects.json</code> and replace it in your project folder.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.5rem;">
+            <button class="btn-cms-primary" id="btnDownloadJson">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Updated projects.json</span>
+            </button>
+
+            <button class="btn-cms-secondary" id="btnCopyJson">
+              <span>Copy Data JSON to Clipboard</span>
+            </button>
+
+            <div style="margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+              <label class="cms-input-hint" style="display:block; margin-bottom:0.5rem;">Restore or import data:</label>
+              <button class="btn-cms-secondary" id="btnImportJson" style="width:100%;">
+                <span>Import / Upload projects.json</span>
+              </button>
+              <input type="file" id="fileImportJson" accept=".json" style="display:none;">
+            </div>
+
+            <div style="margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+              <button class="btn-cms-danger" id="btnResetData" style="width:100%; padding:0.65rem;">
+                <span>Reset to Default Demo Data</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Floating Studio CMS Trigger Button -->
+  <button class="floating-cms-trigger" id="btnOpenStudioFloating" title="Open Studio CMS (Press 'E')">
+    <span class="studio-indicator"></span>
+    <span>Studio CMS</span>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

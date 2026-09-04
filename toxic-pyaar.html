@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toxic Pyaar — OTT Vertical Web Series | Directed by Lovely Tiwana</title>
+  <meta name="description" content="Toxic Pyaar — A 9:16 Vertical Micro-Drama Series. Directed by Lovely Tiwana. Produced by We Make Cinema. Starring Ayaan Shroff, Shyama Raj, Deep Chand & Pradeep Nair.">
+  <meta property="og:type" content="video.tv_show">
+  <meta property="og:title" content="Toxic Pyaar — OTT Vertical Web Series">
+  <meta property="og:description" content="A 9:16 Vertical Micro-Drama Series directed by Lovely Tiwana for We Make Cinema.">
+  <meta property="og:image" content="assets/posters/poster_toxic_pyaar.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💔</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       TOXIC PYAAR — CINEMATIC PROTOTYPE LANDING PAGE
+       Aesthetic: Dark Noir + Crimson Neon + Cinematic Grain
+       ============================================================ */
+
+    :root {
+      --bg-deep: #050507;
+      --bg-surface: #0a0a0e;
+      --bg-card: #111117;
+      --bg-card-hover: #18181f;
+      --bg-glass: rgba(10, 10, 14, 0.85);
+
+      --text-primary: #f0f0f4;
+      --text-secondary: #8a8d9c;
+      --text-muted: #555768;
+
+      --accent-crimson: #e63946;
+      --accent-rose: #ff4d6d;
+      --accent-deep-red: #9b1d20;
+      --accent-poison: #c9184a;
+      --accent-glow: rgba(230, 57, 70, 0.35);
+      --accent-gold: #e5a93c;
+
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --border-medium: rgba(255, 255, 255, 0.12);
+
+      --font-display: 'Bebas Neue', 'Syne', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --ease-cinema: cubic-bezier(0.16, 1, 0.3, 1);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-deep);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Cinematic Film Grain */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.025) 1px, transparent 0);
+      background-size: 22px 22px;
+      pointer-events: none;
+      z-index: 10000;
+      opacity: 0.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 1.25rem; }
+    }
+
+    /* ============================================================
+       SITE HEADER — FULL PORTFOLIO NAVIGATION
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: transform 0.35s var(--ease-cinema), background 0.35s var(--ease-cinema);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+      transition: transform 0.2s var(--ease-cinema);
+    }
+
+    .brand-logo:hover {
+      transform: translateY(-1px);
+    }
+
+    .brand-monogram {
+      font-family: var(--font-body);
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      padding: 0.25rem 0.65rem;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.04);
+      transition: all 0.2s var(--ease-cinema);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .brand-logo:hover .brand-monogram {
+      border-color: var(--accent-crimson);
+      color: var(--accent-crimson);
+      background: rgba(230, 57, 70, 0.08);
+      box-shadow: 0 0 14px rgba(230, 57, 70, 0.3);
+      transform: scale(1.05);
+    }
+
+    .prod-badge {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: rgba(230,57,70,0.1);
+      border: 1px solid rgba(230,57,70,0.25);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 0.5rem 0;
+      transition: color 0.2s var(--ease-cinema);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text-primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--accent-crimson);
+      transition: width 0.2s var(--ease-cinema);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.06em;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      animation: pulse-glow 2s infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(229,169,60,0.6); }
+      50% { opacity: 0.4; box-shadow: 0 0 12px rgba(229,169,60,0.3); }
+    }
+
+    .format-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      padding: 0.3rem 0.65rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      width: 32px;
+      padding: 6px 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+      display: block;
+      height: 2px;
+      background: var(--text-primary);
+      transition: transform 0.25s var(--ease-cinema), opacity 0.25s var(--ease-cinema);
+    }
+
+    /* Mobile nav */
+    @media (max-width: 900px) {
+      .nav-menu {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--bg-glass);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-bottom: 1px solid var(--border-subtle);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        transform: translateY(-120%);
+        opacity: 0;
+        transition: transform 0.35s var(--ease-cinema), opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      .nav-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .nav-menu li {
+        width: 100%;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 0.85rem 2rem;
+        font-size: 0.9rem;
+      }
+
+      .nav-link::after { display: none; }
+
+      .mobile-menu-toggle {
+        display: flex;
+      }
+
+      .prod-badge { display: none; }
+      .format-tag { display: none; }
+    }
+
+    /* ============================================================
+       HERO SECTION — FULL-BLEED CINEMATIC
+       ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: 72px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: saturate(0.7) brightness(0.35) contrast(1.15);
+      transform: scale(1.05);
+      animation: hero-ken-burns 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes hero-ken-burns {
+      0% { transform: scale(1.05) translateY(0); }
+      100% { transform: scale(1.12) translateY(-1.5%); }
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(ellipse at 50% 80%, rgba(155, 29, 32, 0.18) 0%, transparent 60%),
+        linear-gradient(to top, var(--bg-deep) 0%, rgba(5,5,7,0.85) 35%, rgba(5,5,7,0.5) 60%, rgba(5,5,7,0.7) 100%);
+    }
+
+    /* Animated neon scanline */
+    .hero-scanline {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: linear-gradient(transparent 50%, rgba(230,57,70,0.015) 50%);
+      background-size: 100% 4px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      max-width: 920px;
+      padding: 4rem 2rem;
+    }
+
+    .hero-production-tag {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .hero-production-tag::before,
+    .hero-production-tag::after {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--accent-crimson);
+      opacity: 0.5;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 12vw, 9rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      line-height: 0.95;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 0.3rem;
+      text-shadow: 0 0 80px rgba(230,57,70,0.3), 0 4px 40px rgba(0,0,0,0.8);
+    }
+
+    .hero-title .accent {
+      color: var(--accent-crimson);
+      text-shadow: 0 0 60px rgba(230,57,70,0.5);
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-body);
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      color: var(--text-secondary);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+
+    .hero-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .meta-chip {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-medium);
+      color: var(--text-secondary);
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .meta-chip.highlight {
+      border-color: rgba(230,57,70,0.4);
+      color: var(--accent-rose);
+      background: rgba(230,57,70,0.06);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border-radius: 999px;
+      background: var(--accent-crimson);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-cinema);
+      box-shadow: 0 0 30px rgba(230,57,70,0.3);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-rose);
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(230,57,70,0.5);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.95rem 2rem;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+      transition: all 0.3s var(--ease-cinema);
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-crimson);
+      color: var(--accent-crimson);
+      background: rgba(230,57,70,0.06);
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      animation: scroll-bounce 2s ease-in-out infinite;
+    }
+
+    .scroll-indicator span {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--accent-crimson), transparent);
+      animation: scroll-line-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scroll-bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    @keyframes scroll-line-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ============================================================
+       COUNTDOWN / RELEASE SECTION
+       ============================================================ */
+    .countdown-section {
+      padding: 5rem 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown-section::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(230,57,70,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .countdown-head {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .countdown-label {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 0.75rem;
+    }
+
+    .countdown-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: 0.04em;
+      color: var(--text-primary);
+    }
+
+    .countdown-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .countdown-unit {
+      text-align: center;
+      min-width: 110px;
+      padding: 1.5rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .countdown-unit:hover {
+      border-color: rgba(230,57,70,0.3);
+      box-shadow: 0 8px 40px rgba(230,57,70,0.08);
+      transform: translateY(-2px);
+    }
+
+    .countdown-num {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      line-height: 1;
+      color: var(--accent-crimson);
+      letter-spacing: 0.02em;
+    }
+
+    .countdown-unit-label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    .countdown-colon {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--text-muted);
+      animation: blink-colon 1s step-end infinite;
+    }
+
+    @keyframes blink-colon {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .countdown-note {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ============================================================
+       POSTER SECTION — CINEMATIC DISPLAY
+       ============================================================ */
+    .poster-section {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .poster-display {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .poster-display { grid-template-columns: 1fr; }
+    }
+
+    .poster-frame {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-medium);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 60px rgba(230,57,70,0.08);
+      transition: transform 0.5s var(--ease-cinema), box-shadow 0.5s var(--ease-cinema);
+    }
+
+    .poster-frame:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.8), 0 0 80px rgba(230,57,70,0.15);
+    }
+
+    .poster-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .poster-frame-badge {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: rgba(0,0,0,0.7);
+      border: 1px solid rgba(230,57,70,0.3);
+      color: var(--accent-crimson);
+      backdrop-filter: blur(8px);
+    }
+
+    .poster-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .poster-info-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+    }
+
+    .poster-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+    }
+
+    .poster-info p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .info-spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .spec-item {
+      padding: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .spec-item:hover {
+      border-color: rgba(230,57,70,0.2);
+    }
+
+    .spec-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .spec-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* ============================================================
+       CAST SECTION
+       ============================================================ */
+    .cast-section {
+      padding: 6rem 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: 0.04em;
+    }
+
+    .cast-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .cast-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      transition: all 0.35s var(--ease-cinema);
+      overflow: hidden;
+    }
+
+    .cast-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-crimson), transparent);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .cast-card:hover::before {
+      opacity: 1;
+    }
+
+    .cast-card:hover {
+      border-color: rgba(230,57,70,0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .cast-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-crimson), var(--accent-deep-red));
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: #fff;
+      letter-spacing: 0.03em;
+      box-shadow: 0 8px 30px rgba(230,57,70,0.25);
+      position: relative;
+    }
+
+    .cast-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1px solid rgba(230,57,70,0.3);
+    }
+
+    .cast-name {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+
+    .cast-role {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 0.75rem;
+    }
+
+    .cast-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* ============================================================
+       CREW SECTION
+       ============================================================ */
+    .crew-section {
+      padding: 5rem 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .crew-card {
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .crew-card:hover {
+      border-color: rgba(230,57,70,0.2);
+      transform: translateY(-2px);
+    }
+
+    .crew-role-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 0.5rem;
+    }
+
+    .crew-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .crew-sub {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 0.25rem;
+    }
+
+    /* ============================================================
+       EPISODES PREVIEW
+       ============================================================ */
+    .episodes-section {
+      padding: 6rem 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .episode-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.35s var(--ease-cinema);
+      cursor: default;
+    }
+
+    .episode-card:hover {
+      border-color: rgba(230,57,70,0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 50px rgba(0,0,0,0.4);
+    }
+
+    .episode-thumb {
+      height: 160px;
+      background: linear-gradient(135deg, var(--bg-surface), var(--bg-card));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .episode-thumb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, rgba(230,57,70,0.05), rgba(155,29,32,0.1));
+    }
+
+    .ep-number {
+      font-family: var(--font-display);
+      font-size: 4.5rem;
+      color: rgba(230,57,70,0.12);
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ep-lock {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: rgba(0,0,0,0.6);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      letter-spacing: 0.06em;
+    }
+
+    .episode-info {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .ep-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.35rem;
+    }
+
+    .ep-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .ep-runtime {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+      letter-spacing: 0.06em;
+    }
+
+    /* ============================================================
+       STORYLINE / LOGLINE SECTION
+       ============================================================ */
+    .story-section {
+      padding: 6rem 0;
+      border-top: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .story-card {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 3rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-crimson), transparent);
+    }
+
+    .story-quote-icon {
+      font-size: 3rem;
+      color: var(--accent-crimson);
+      opacity: 0.3;
+      margin-bottom: 1rem;
+      font-family: serif;
+    }
+
+    .story-text {
+      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--text-primary);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .story-tagline {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.08em;
+      color: var(--accent-crimson);
+      text-shadow: 0 0 30px rgba(230,57,70,0.3);
+    }
+
+    /* ============================================================
+       CTA / NOTIFY SECTION
+       ============================================================ */
+    .notify-section {
+      padding: 5rem 0;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .notify-box {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .notify-box h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+    }
+
+    .notify-box p {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .notify-form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .notify-input {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      color: var(--text-primary);
+      outline: none;
+      min-width: 280px;
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .notify-input:focus {
+      border-color: var(--accent-crimson);
+      box-shadow: 0 0 20px rgba(230,57,70,0.15);
+    }
+
+    .notify-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .btn-notify {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      border-radius: 999px;
+      background: var(--accent-crimson);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-cinema);
+    }
+
+    .btn-notify:hover {
+      background: var(--accent-rose);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(230,57,70,0.3);
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .page-footer {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-brand span {
+      color: var(--accent-crimson);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-crimson);
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    /* ============================================================
+       SCROLL REVEAL ANIMATIONS
+       ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s var(--ease-cinema), transform 0.8s var(--ease-cinema);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 768px) {
+      .hero-title { font-size: clamp(3rem, 14vw, 5rem); }
+
+      .header-right .format-tag { display: none; }
+
+      .countdown-grid { gap: 0.75rem; }
+      .countdown-unit { min-width: 80px; padding: 1rem 0.75rem; }
+      .countdown-num { font-size: 2.5rem; }
+      .countdown-colon { font-size: 2rem; }
+
+      .poster-display { grid-template-columns: 1fr; gap: 2rem; }
+      .info-spec-grid { grid-template-columns: 1fr; }
+
+      .story-card { padding: 2rem 1.5rem; }
+      .story-text { font-size: 1.15rem; }
+
+      .hero-cta-group { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+
+      .footer-inner { justify-content: center; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .cast-grid { grid-template-columns: 1fr; }
+      .episodes-grid { grid-template-columns: 1fr; }
+      .crew-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SITE NAVIGATION HEADER (Full Portfolio Menu) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="index.html" class="brand-logo" aria-label="Lovely Tiwana — Back to Portfolio">
+          <span class="brand-monogram">LT</span>
+        </a>
+        <span class="prod-badge">OTT Original Series</span>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#work" class="nav-link">Work</a></li>
+          <li><a href="index.html#stills" class="nav-link">Stills</a></li>
+          <li><a href="index.html#bio" class="nav-link">Bio</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Coming Soon</span>
+        </div>
+        <span class="format-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>
+          9:16 Vertical
+        </span>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/posters/poster_toxic_pyaar.jpg" alt="Toxic Pyaar Series Poster">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-scanline"></div>
+
+    <div class="hero-content">
+      <div class="hero-production-tag">We Make Cinema presents</div>
+      <h1 class="hero-title">TOXIC <span class="accent">PYAAR</span></h1>
+      <p class="hero-subtitle">A 9:16 Vertical Micro-Drama Series — Where love becomes the most dangerous weapon.</p>
+
+      <div class="hero-meta-row">
+        <span class="meta-chip highlight">9:16 Vertical</span>
+        <span class="meta-chip">Micro-Drama</span>
+        <span class="meta-chip">2026</span>
+        <span class="meta-chip">Hindi</span>
+        <span class="meta-chip">Thriller · Romance</span>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#notify" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          Get Notified
+        </a>
+        <a href="#story" class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Explore Story
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section" id="countdown">
+    <div class="container">
+      <div class="countdown-head">
+        <div class="countdown-label">Estimated Release</div>
+        <h2 class="countdown-title">LAUNCHING SOON ON OTT</h2>
+      </div>
+
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdDays">--</div>
+          <div class="countdown-unit-label">Days</div>
+        </div>
+        <span class="countdown-colon">:</span>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdHours">--</div>
+          <div class="countdown-unit-label">Hours</div>
+        </div>
+        <span class="countdown-colon">:</span>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdMinutes">--</div>
+          <div class="countdown-unit-label">Minutes</div>
+        </div>
+        <span class="countdown-colon">:</span>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdSeconds">--</div>
+          <div class="countdown-unit-label">Seconds</div>
+        </div>
+      </div>
+
+      <p class="countdown-note">Release date TBA — Countdown is estimated</p>
+    </div>
+  </section>
+
+  <!-- STORYLINE -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">The Premise</div>
+        <h2 class="section-title">STORYLINE</h2>
+      </div>
+
+      <div class="story-card reveal">
+        <div class="story-quote-icon">"</div>
+        <p class="story-text">
+          In a world where love wears a thousand masks, one relationship spirals into obsession, betrayal, and dark truths. Between whispered promises and hidden daggers, every heartbeat is a gamble — and every kiss could be the last.
+        </p>
+        <div class="story-tagline">LOVE. OBSESSION. BETRAYAL.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTER SHOWCASE -->
+  <section class="poster-section" id="poster">
+    <div class="container">
+      <div class="poster-display reveal">
+        <div class="poster-frame">
+          <img src="assets/posters/poster_toxic_pyaar.jpg" alt="Toxic Pyaar Official Poster">
+          <span class="poster-frame-badge">Official Poster</span>
+        </div>
+
+        <div class="poster-info">
+          <span class="poster-info-tag">Production Details</span>
+          <h2>A WE MAKE CINEMA ORIGINAL</h2>
+          <p>
+            Toxic Pyaar is a 9:16 Vertical Micro-Drama Series designed exclusively for mobile-first OTT streaming platforms. Directed by Lovely Tiwana, the series pushes the boundaries of vertical storytelling with cinematic lighting, tight editing, and intense performances.
+          </p>
+
+          <div class="info-spec-grid">
+            <div class="spec-item">
+              <div class="spec-label">Format</div>
+              <div class="spec-value">9:16 Vertical Series</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Genre</div>
+              <div class="spec-value">Thriller · Romance</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Production</div>
+              <div class="spec-value">We Make Cinema</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Camera</div>
+              <div class="spec-value">Sony Cinema Line</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAST -->
+  <section class="cast-section" id="cast">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">Starring</div>
+        <h2 class="section-title">THE CAST</h2>
+      </div>
+
+      <div class="cast-grid reveal">
+        <div class="cast-card">
+          <div class="cast-avatar">AS</div>
+          <div class="cast-name">AYAAN SHROFF</div>
+          <div class="cast-role">Lead Actor</div>
+          <p class="cast-desc">Bringing raw intensity and emotional depth to the screen — the face of Toxic Pyaar's burning obsession.</p>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-avatar">SR</div>
+          <div class="cast-name">SHYAMA RAJ</div>
+          <div class="cast-role">Lead Actress</div>
+          <p class="cast-desc">A powerhouse performer navigating love, betrayal, and survival in a world of dangerous choices.</p>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-avatar">DC</div>
+          <div class="cast-name">DEEP CHAND</div>
+          <div class="cast-role">Supporting Actor</div>
+          <p class="cast-desc">The enigmatic force who blurs the line between ally and adversary in this twisted love saga.</p>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-avatar">PN</div>
+          <div class="cast-name">PRADEEP NAIR</div>
+          <div class="cast-role">Supporting Actor</div>
+          <p class="cast-desc">A commanding presence whose every scene adds layers of suspense and unpredictability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREW -->
+  <section class="crew-section" id="crew">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">Behind The Lens</div>
+        <h2 class="section-title">THE CREW</h2>
+      </div>
+
+      <div class="crew-grid reveal">
+        <div class="crew-card">
+          <div class="crew-role-label">Director</div>
+          <div class="crew-name">Lovely Tiwana</div>
+          <div class="crew-sub">Lovely Tiwana Films</div>
+        </div>
+        <div class="crew-card">
+          <div class="crew-role-label">Writer</div>
+          <div class="crew-name">Jayant Gupta</div>
+          <div class="crew-sub">Original Story & Screenplay</div>
+        </div>
+        <div class="crew-card">
+          <div class="crew-role-label">DOP / Cinematography</div>
+          <div class="crew-name">Akash Kaliyan</div>
+          <div class="crew-sub">Sony Cinema Line</div>
+        </div>
+        <div class="crew-card">
+          <div class="crew-role-label">Editor</div>
+          <div class="crew-name">Lovely Tiwana</div>
+          <div class="crew-sub">Cut, Color & VFX Finishing</div>
+        </div>
+        <div class="crew-card">
+          <div class="crew-role-label">Production House</div>
+          <div class="crew-name">We Make Cinema</div>
+          <div class="crew-sub">Original Production</div>
+        </div>
+        <div class="crew-card">
+          <div class="crew-role-label">Format</div>
+          <div class="crew-name">9:16 Vertical</div>
+          <div class="crew-sub">Mobile-First OTT Streaming</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EPISODES PREVIEW -->
+  <section class="episodes-section" id="episodes">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">Episodes</div>
+        <h2 class="section-title">EPISODE GUIDE</h2>
+      </div>
+
+      <div class="episodes-grid reveal">
+        <div class="episode-card">
+          <div class="episode-thumb">
+            <span class="ep-number">01</span>
+            <span class="ep-lock">🔒 Locked</span>
+          </div>
+          <div class="episode-info">
+            <h4 class="ep-title">FIRST LOOK</h4>
+            <p class="ep-desc">A chance encounter ignites an instant attraction. But beneath the surface, there are secrets waiting to unravel...</p>
+            <div class="ep-runtime">EST. RUNTIME: 08–12 MIN</div>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-thumb">
+            <span class="ep-number">02</span>
+            <span class="ep-lock">🔒 Locked</span>
+          </div>
+          <div class="episode-info">
+            <h4 class="ep-title">SWEET POISON</h4>
+            <p class="ep-desc">Love deepens, but so does the obsession. Lines blur between devotion and control, leading to the first crack.</p>
+            <div class="ep-runtime">EST. RUNTIME: 08–12 MIN</div>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-thumb">
+            <span class="ep-number">03</span>
+            <span class="ep-lock">🔒 Locked</span>
+          </div>
+          <div class="episode-info">
+            <h4 class="ep-title">BREAKING POINT</h4>
+            <p class="ep-desc">Trust shatters. Revelations surface that change everything. The relationship reaches its most volatile turning point.</p>
+            <div class="ep-runtime">EST. RUNTIME: 08–12 MIN</div>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <div class="episode-thumb">
+            <span class="ep-number">04</span>
+            <span class="ep-lock">🔒 Locked</span>
+          </div>
+          <div class="episode-info">
+            <h4 class="ep-title">THE FALLOUT</h4>
+            <p class="ep-desc">Every choice has a consequence. As truth collides with denial, the real face of toxic love is exposed.</p>
+            <div class="ep-runtime">EST. RUNTIME: 08–12 MIN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTIFY -->
+  <section class="notify-section" id="notify">
+    <div class="container">
+      <div class="notify-box reveal">
+        <h3>GET RELEASE UPDATES</h3>
+        <p>Be the first to know when Toxic Pyaar drops. Enter your email for exclusive first-look teaser access and release date announcements.</p>
+        <form class="notify-form" id="notifyForm">
+          <input type="email" class="notify-input" placeholder="your@email.com" required>
+          <button type="submit" class="btn-notify">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">TOXIC <span>PYAAR</span></div>
+      <div class="footer-links">
+        <a href="index.html">Portfolio</a>
+        <a href="index.html#work">All Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 Lovely Tiwana Films × We Make Cinema. All rights reserved. Directed by Lovely Tiwana.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ============================================================
+       COUNTDOWN TIMER
+       ============================================================ */
+    (function() {
+      // Estimated release: 3 months from now
+      const releaseDate = new Date();
+      releaseDate.setMonth(releaseDate.getMonth() + 3);
+      releaseDate.setHours(20, 0, 0, 0);
+
+      function updateCountdown() {
+        const now = new Date();
+        const diff = releaseDate - now;
+
+        if (diff <= 0) {
+          document.getElementById('cdDays').textContent = '00';
+          document.getElementById('cdHours').textContent = '00';
+          document.getElementById('cdMinutes').textContent = '00';
+          document.getElementById('cdSeconds').textContent = '00';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+        document.getElementById('cdHours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cdMinutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('cdSeconds').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+
+    /* ============================================================
+       SCROLL REVEAL
+       ============================================================ */
+    (function() {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+      reveals.forEach(el => observer.observe(el));
+    })();
+
+    /* ============================================================
+       NOTIFY FORM
+       ============================================================ */
+    document.getElementById('notifyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const input = this.querySelector('.notify-input');
+      const btn = this.querySelector('.btn-notify');
+      const email = input.value;
+
+      btn.textContent = '✓ SUBSCRIBED';
+      btn.style.background = '#10b981';
+      btn.style.boxShadow = '0 8px 30px rgba(16,185,129,0.3)';
+      input.value = '';
+      input.placeholder = 'You\'re on the list!';
+
+      setTimeout(() => {
+        btn.textContent = 'NOTIFY ME';
+        btn.style.background = '';
+        btn.style.boxShadow = '';
+        input.placeholder = 'your@email.com';
+      }, 3000);
+    });
+
+    /* ============================================================
+       PARALLAX HERO (subtle)
+       ============================================================ */
+    (function() {
+      const heroImg = document.querySelector('.hero-bg img');
+      if (!heroImg || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        if (scrollY < window.innerHeight * 1.2) {
+          heroImg.style.transform = `scale(1.05) translateY(${scrollY * 0.12}px)`;
+        }
+      }, { passive: true });
+    })();
+
+    /* ============================================================
+       MOBILE MENU TOGGLE
+       ============================================================ */
+    (function() {
+      const toggle = document.getElementById('mobileMenuToggle');
+      const menu = document.getElementById('navMenu');
+      if (!toggle || !menu) return;
+
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        const isOpen = menu.classList.contains('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        // Animate hamburger to X
+        const spans = toggle.querySelectorAll('span');
+        if (isOpen) {
+          spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+          spans[1].style.opacity = '0';
+          spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+        } else {
+          spans[0].style.transform = '';
+          spans[1].style.opacity = '';
+          spans[2].style.transform = '';
+        }
+      });
+
+      // Close on nav link click
+      menu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('open');
+          const spans = toggle.querySelectorAll('span');
+          spans[0].style.transform = '';
+          spans[1].style.opacity = '';
+          spans[2].style.transform = '';
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

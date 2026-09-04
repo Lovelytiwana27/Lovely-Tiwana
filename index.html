@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovely Tiwana | Director, DOP & Editor</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pro-theme">
+  
+  <!-- Minimal Header -->
+  <header class="pro-header">
+    <div class="pro-logo">LOVELY TIWANA</div>
+    <nav class="pro-nav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pro-hero">
+    <div class="pro-hero-bg">
+      <img src="assets/posters/showreel_cover.png" id="proHeroImg" alt="Hero Background">
+      <div class="pro-hero-overlay"></div>
+    </div>
+    <div class="pro-hero-content">
+      <h1 class="pro-title">LOVELY TIWANA</h1>
+      <p class="pro-subtitle">DIRECTOR | DOP | EDITOR</p>
+      <a href="#portfolio" class="pro-btn">EXPLORE PORTFOLIO</a>
+    </div>
+  </section>
+
+  <!-- Music Videos -->
+  <section id="portfolio" class="pro-section">
+    <div class="pro-container">
+      <h2 class="pro-section-title">MUSIC VIDEOS</h2>
+      <div class="pro-grid" id="musicGrid">
+        <!-- JS will populate music video cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- OTT Vertical Web Series -->
+  <section id="web-series" class="pro-section pro-darker">
+    <div class="pro-container">
+      <h2 class="pro-section-title">OTT VERTICAL WEB SERIES</h2>
+      <div class="pro-grid pro-grid-vertical" id="webSeriesGrid">
+        <!-- JS will populate vertical project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Posters & Stills Carousel -->
+  <section id="stills" class="pro-section" style="padding: 4rem 0; overflow: hidden;">
+    <h2 class="pro-section-title" style="margin-bottom: 2rem;">PRODUCTION STILLS</h2>
+    <div class="stills-marquee">
+      <div class="stills-marquee-track" id="stillsTrack">
+        <!-- JS will populate stills here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="pro-section pro-darker">
+    <div class="pro-container pro-about-split">
+      <div class="pro-about-img">
+        <img src="assets/stills/director_portrait.jpg" id="proBioImg" alt="Lovely Tiwana">
+      </div>
+      <div class="pro-about-text">
+        <h2 class="pro-section-title" style="text-align:left; margin-bottom: 1rem;">ABOUT ME</h2>
+        <p>I am Lovely Tiwana, the creative mind behind Lovely Tiwana Films. With a carefully crafted portfolio of over 20 completed projects, I specialize in directing, shooting, and editing dynamic visual content.</p>
+        <br>
+        <p>My approach adapts to the exact needs of the project. Whether I am stepping in exclusively as a precision Video Editor, leading the vision as a Director and Editor, or handling the complete visual journey as a Director, DOP, and Editor all at once, my focus remains on delivering premium cinematic quality. Armed with industry-leading Sony Cinema cameras, I ensure every frame tells a compelling story.</p>
+        
+        <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: var(--accent-gold); font-family: var(--font-serif); font-size: 1.5rem;">My Expertise & Roles</h3>
+        <p><strong>Complete Visual Production (Director, DOP & Editor):</strong> Handling the entire project from the ground up. From setting the creative vision and lighting the scene with Sony Cinema systems, to crafting the final cut in the editing room.</p>
+        <br>
+        <p><strong>Directing & Editing:</strong> Leading the talent on set, and seamlessly bringing that vision together in post-production for a cohesive final product.</p>
+        <br>
+        <p><strong>Post-Production (Video Editor):</strong> Stepping in as a dedicated editor to take pre-shot footage and elevate it through advanced editing, color grading, and precise finishing.</p>
+
+        <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: var(--accent-gold); font-family: var(--font-serif); font-size: 1.5rem;">Equipment & Milestones</h3>
+        <p><strong>Gear:</strong> All primary cinematography is executed using top-tier Sony Cinema Line Cameras.</p>
+        <p><strong>Experience:</strong> 20+ Successfully Delivered Projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Stills -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" src="" alt="Production Still Full Size">
+    <div class="lightbox-info" id="lightboxTitle"></div>
+    <div class="lightbox-sub-info" id="lightboxSubtitle"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="pro-footer">
+    <div class="pro-container pro-footer-flex">
+      
+      <div style="text-align: center; margin-bottom: 2rem; max-width: 600px;">
+        <p style="font-size: 1.2rem; color: var(--text-main); font-family: var(--font-serif); margin-bottom: 1.5rem;">Ready to bring your next visual project to life? Let's collaborate. Get in touch with Lovely Tiwana Films today.</p>
+        
+        <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 1rem;">
+          <a href="tel:+919501572421" style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-gold); text-decoration: none; font-size: 1.2rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            9501572421
+          </a>
+          <a href="https://www.instagram.com/lovelytiwanafilms/" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-main); text-decoration: none; font-size: 1.1rem; transition: color 0.3s;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            lovelytiwanafilms
+          </a>
+        </div>
+      </div>
+
+      <div class="pro-nav-bottom">
+        <a href="#home">Home</a> | <a href="#portfolio">Portfolio</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+      </div>
+      <div class="pro-copyright">
+        &copy; <span id="proYear">2026</span> Copyright Lovely Tiwana
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
