@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     let data;
-    const saved = localStorage.getItem('lt_portfolio_data_v14');
+    const saved = localStorage.getItem('lt_portfolio_data_v15');
     if (saved) {
       data = JSON.parse(saved);
     } else {

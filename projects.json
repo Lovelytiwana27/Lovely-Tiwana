@@ -120,6 +120,24 @@
                ],
     "projects":  [
                      {
+                         "id":  "proj-brethren",
+                         "title":  "Brethren — Gurjant Panag",
+                         "brand":  "Gurjant Panag",
+                         "roles":  [
+                                       "Director",
+                                       "Editor",
+                                       "DOP"
+                                   ],
+                         "genre":  "Music Videos",
+                         "videoUrl":  "https://www.youtube.com/watch?v=_qyKDvUBgj8&list=RD_qyKDvUBgj8&start_radio=1",
+                         "poster":  "assets/posters/g.jpg",
+                         "year":  "2021",
+                         "credits":  "Director, Editor & DOP: Lovely Tiwana",
+                         "note":  "",
+                         "aspectRatio":  "16:9",
+                         "featured":  true
+                     },
+                     {
                          "id":  "proj-life-power",
                          "title":  "Life Power",
                          "brand":  "White Hill Tunes",
@@ -130,7 +148,7 @@
                                    ],
                          "genre":  "Music Videos",
                          "videoUrl":  "https://www.youtube.com/watch?v=vK7xNPohuBY",
-                         "poster":  "assets/posters/poster_life_power.jpg",
+                         "poster":  "assets/posters/vK7xNPohuBY-HD.jpg",
                          "year":  "2026",
                          "credits":  "Director, DOP \u0026 Editor: Lovely Tiwana\nShot on: iPhone 13 Pro Max",
                          "note":  "Shot on iPhone 13 Pro Max",

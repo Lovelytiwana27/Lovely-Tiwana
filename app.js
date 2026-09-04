@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     let data;
-    const saved = localStorage.getItem('lt_portfolio_data_v14');
+    const saved = localStorage.getItem('lt_portfolio_data_v15');
     if (saved) {
       data = JSON.parse(saved);
     } else {
@@ -23,9 +23,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     const musicVideos = allProjects.filter(p => 
       !verticalProjects.includes(p)
     );
+    const moreProjectIds = ['proj-life-power', 'proj-brethren'];
+    const moreMusicVideos = musicVideos.filter(p => moreProjectIds.includes(p.id));
+    const mainMusicVideos = musicVideos.filter(p => !moreProjectIds.includes(p.id));
 
-    renderGrid('musicGrid', musicVideos);
-    renderGrid('webSeriesGrid', verticalProjects);
+    const generateGridHtml = (projs) => projs.map(proj => `
+      <a href="project.html?id=${proj.id}" class="pro-project-card">
+        <div class="pro-card-image-wrap">
+          <img src="${proj.poster}" alt="${proj.title}">
+        </div>
+        <h3 class="pro-card-title">${proj.title}</h3>
+        <div class="pro-card-meta">
+          <span>${proj.genre || ''}</span>
+          <span>${proj.year || ''}</span>
+        </div>
+      </a>
+    `).join('');
+
+    const mainHtml = generateGridHtml(mainMusicVideos);
+    const stackedCardHtml = `
+      <div class="pro-more-card" onclick="openMoreProjectsModal()">
+        <div class="stack-layer stack-layer-1" style="background-image: url('${moreMusicVideos[1]?.poster || ''}')"></div>
+        <div class="stack-layer stack-layer-2" style="background-image: url('${moreMusicVideos[0]?.poster || ''}')"></div>
+        <div class="stack-layer stack-layer-3">
+          <div class="more-card-text">+${moreMusicVideos.length}</div>
+          <div class="more-card-subtext">More Projects</div>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('musicGrid').innerHTML = mainHtml + (moreMusicVideos.length > 0 ? stackedCardHtml : '');
+    document.getElementById('webSeriesGrid').innerHTML = generateGridHtml(verticalProjects);
+    
+    const moreGrid = document.getElementById('moreProjectsGrid');
+    if (moreGrid) moreGrid.innerHTML = generateGridHtml(moreMusicVideos);
     renderStillsMarquee(stills);
 
   } catch (err) {
@@ -110,6 +141,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === modal) {
         modal.classList.remove('active');
       }
+    });
+  }
+});
+
+// More Projects Modal Logic
+function openMoreProjectsModal() {
+  document.getElementById('moreProjectsModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeBtn = document.getElementById('moreModalClose');
+  const modal = document.getElementById('moreProjectsModal');
+  
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
     });
   }
 });
