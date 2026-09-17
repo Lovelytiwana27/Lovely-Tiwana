@@ -295,7 +295,7 @@
                      },
                      {
                          "id":  "proj-date-with-daddy",
-                         "title":  "Date With Daddy-In-Law — Micro-Drama",
+                         "title":  "Date With Daddy — Micro-Drama",
                          "brand":  "Original Micro-Drama",
                          "roles":  [
                                        "Director",
@@ -305,7 +305,7 @@
                          "videoUrl":  "",
                          "poster":  "assets/posters/poster_date_with_daddy.jpg",
                          "year":  "2026",
-                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nGenre: Dark Comedy | Romance | Thriller\nFormat: 9:16 Original Micro-Drama Series\nTagline: He came for a date... got a life test!",
+                         "credits":  "Director \u0026 Editor: Lovely Tiwana\nAD: Garvit Vohra\nGenre: Romance | Dark Comedy | Family | Thriller\nFormat: 9:16 Original Micro-Drama Series\nTagline: A date can wait... Approval can\u0027t!",
                          "note":  "Coming Soon",
                          "aspectRatio":  "9:16",
                          "featured":  true
@@ -396,7 +396,7 @@
                    {
                        "id":  "still-date-with-daddy",
                        "image":  "assets/stills/still_date_with_daddy.jpg",
-                       "title":  "Date With Daddy-In-Law — Micro-Drama Poster",
+                       "title":  "Date With Daddy — Micro-Drama Poster",
                        "camera":  "Director \u0026 Editor: Lovely Tiwana",
                        "category":  "OTT Vertical Series",
                        "year":  "2026"
